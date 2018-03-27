@@ -11,8 +11,7 @@ http://limepepper.co.uk/ansible/github/2018/02/04/ansible-tagged-tasks.html
 >  supports a
 >  [tags](http://docs.ansible.com/ansible/latest/user_guide/playbooks_tags.html)
 >  feature, however it's not as straightforward to use this feature as you might
->  expect if you make use of `include_role` or `include_tasks` Here
->  I go over several ways to debug ansible using tags and look at some
->  alternatives for more granular debugging.
+>  expect if you make use of `include_role` or `include_tasks`
+>
 
 The problem referenced in the article is fixed in ansible `2.5.0`
