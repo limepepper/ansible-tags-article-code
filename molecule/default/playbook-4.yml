@@ -1,0 +1,11 @@
+---
+
+- name: Converge
+  hosts: all
+
+  tasks:
+
+    - include_role:
+        name: ansible-tags-article-code
+        tasks_from: playbook-4-tasks-1.yml
+      tags: wordpress-template

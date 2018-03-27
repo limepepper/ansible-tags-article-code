@@ -1,0 +1,12 @@
+---
+
+- name: "this task is tagged as 'wordpress-template'"
+  template:
+    src: template-in.j2
+    dest: "/tmp/template-out.txt"
+  tags: wordpress-template
+
+- name: some other tasks 'not tagged with wordpress-template'
+  template:
+    src: template-in.j2
+    dest: "/tmp/template-out2.txt"

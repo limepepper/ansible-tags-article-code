@@ -1,0 +1,16 @@
+---
+
+- name: Converge
+  hosts: all
+
+  tasks:
+
+    - import_role:
+        name: ansible-tags-article-code
+        tasks_from: playbook-3-tasks-1.yml
+      vars:
+        site_to_process: "{{ item }}"
+      with_items:
+        - site: www.mywordpresssite-01.com
+        - site: www.mywordpresssite-02.com
+        - site: www.mywordpresssite-03.com

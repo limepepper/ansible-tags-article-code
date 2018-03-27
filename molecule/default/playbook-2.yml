@@ -1,0 +1,10 @@
+---
+
+- name: Converge
+  hosts: all
+
+  tasks:
+
+    - import_role:
+        name: ansible-tags-article-code
+        tasks_from: playbook-2-tasks-1.yml
